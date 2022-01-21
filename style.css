@@ -30,6 +30,9 @@
   --size-border-radius: 4px;
 }
 
+/* Annimation */
+--animation-duration: 300ms;
+
 /* Universal tags */
 * {
   box-sizing: border-box;
@@ -44,6 +47,13 @@ body {
 a {
   text-decoration: none;
   color: var(--color-white);
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 ul {
@@ -113,4 +123,107 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-dark-orange);
+}
+
+/* Home */
+#home {
+  background: url("img/home.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
+.home_avatar {
+  width: 250px;
+  height: 300px;
+  border-radius: 60%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home_title,
+.home_description {
+  color: var(--color-white);
+}
+
+.home_contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  text-align: center;
+  padding: 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  line-height: 170px;
+  margin: auto;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__title,
+.major__decsription {
+  color: var(--color-dark-grey);
+}
+
+.major__decsription {
+  font-size: var(--font-small);
+}
+
+.major__icon:hover i {
+  color: var(--color-pink);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.job {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__logo {
+  width: 100px;
+  height: 40px;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-size: var(--font-micro);
 }
