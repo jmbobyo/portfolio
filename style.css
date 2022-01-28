@@ -21,6 +21,11 @@
   --font-small: 16px;
   --font-micro: 14px;
 
+  .section__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
   /* Font weight */
   --weight-bold: 700;
   --weight-semi-bold: 600;
@@ -158,7 +163,6 @@ p {
 .section {
   text-align: center;
   padding: 50px;
-  max-width: 1200px;
   margin: auto;
 }
 
@@ -231,4 +235,61 @@ p {
 .contact__icon {
   color: var(--color-orange);
   font-size: var(--font-medium);
+}
+
+/* Skill */
+
+#skills {
+  background-color: var(--color-yellow);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset_title {
+  color: var(--color-light-white);
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.skillbar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skillbar__value {
+  height: 3px;
+  background-color: var(--color-orange);
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.skill_description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
