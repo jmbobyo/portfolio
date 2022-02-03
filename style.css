@@ -232,11 +232,6 @@ p {
   font-size: var(--font-micro);
 }
 
-.contact__icon {
-  color: var(--color-orange);
-  font-size: var(--font-medium);
-}
-
 /* Skill */
 
 #skills {
@@ -438,4 +433,29 @@ p {
 
 .bubble_pm {
   text-align: center;
+}
+
+/* contact */
+#contact {
+  background-color: var(--color-orange);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: var(--color-white);
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact_links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
+
+.contact_links i:hover{
+  transform: scale(1.1);
+  color: var(--color-dark-orange;
 }
